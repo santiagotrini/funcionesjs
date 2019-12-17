@@ -8,6 +8,20 @@
 // formado por * y espacios representando cada casillero del tablero
 
 // inserte solucion aqui
+function chessboard(n) {
+  let tablero = '';
+  for (let i = 0; i < n; i++) {
+    for (let j = 0; j < n; j++) {
+      if ((i + j) % 2 == 0) {
+        tablero += '*';
+      } else {
+        tablero += ' ';
+      }
+    }
+    tablero += '\n';
+  }
+  return tablero;
+}
 
 // no borrar esta linea
 module.exports = chessboard;

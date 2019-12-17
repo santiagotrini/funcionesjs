@@ -3,6 +3,12 @@
 // si los tres numeros son iguales o falso en caso contrario.
 
 // inserte solucion aqui
+function equals(a, b, c) {
+  if (a == b && a == c)
+    return true;
+  else
+    return false;
+}
 
 // no borrar esta linea
 module.exports = equals;

@@ -4,6 +4,13 @@
 // y calcular la suma parcial de los primeros n terminos
 
 // inserte solucion aqui
+function sum(n) {
+  let suma = 0;
+  for (let i = 0; i < n; i++)
+    suma = suma + (1 / Math.pow(2, i));
+  return suma;  
+}
+
 
 // no borrar esta linea
 module.exports = sum;
